@@ -125,7 +125,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   position: relative;
-  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-line {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -170,14 +181,20 @@ img {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
+  
 }
 
 .address-link {
   color: #434455;
-  list-style: none;
-  text-decoration: none;
-  padding: 24px 0;
   display: block;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover {
