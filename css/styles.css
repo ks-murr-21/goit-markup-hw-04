@@ -92,6 +92,8 @@ img {
   text-decoration: none;
   color: #4d5ae5;
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .span-logo {
@@ -118,6 +120,13 @@ img {
   text-decoration: none;
   padding: 24px 0;
   display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-line-link:hover,
@@ -128,6 +137,18 @@ img {
   letter-spacing: 0.02em;
   color: #404bbf;
   list-style: none;
+}
+
+.top-line-link::after {
+  content: '';
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -1px;
 }
 
 .address {
@@ -446,6 +467,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ==================== / PORCTFOLIO STYLES ==================== */
 
